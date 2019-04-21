@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parentLinear"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#9E9E9E"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="7dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#607D8B"
+        android:foregroundGravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/logo"
+            android:layout_width="260dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/oval"
+            android:layout_marginLeft="20dp"
+            android:layout_height="260dp"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#8BC34A"/>
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lin_Lower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#757575"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_Previous"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:visibility="visible"
+            android:src="@drawable/previous"/>
+
+        <ImageView
+            android:id="@+id/btn_PlayPause"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:visibility="visible"
+            android:src="@drawable/pause"/>
+
+        <ImageView
+            android:id="@+id/btn_Next"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:src="@drawable/next"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_VoiceEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="#795548"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:text="Voice Enabled Mode - ON" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
